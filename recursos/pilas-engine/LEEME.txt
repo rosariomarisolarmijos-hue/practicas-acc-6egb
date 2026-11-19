@@ -1,0 +1,11 @@
+SOFTWARE EDUCATIVO (PILAS ENGINE)
+
+1. En Pilas Engine exporta tu juego como HTML (se descarga "mi-proyecto.zip").
+2. Descomprímelo: aparecen el archivo LEER y la carpeta "proyecto".
+3. En GitHub entra a esta carpeta (recursos/pilas-engine) > Add file > Upload files
+   y arrastra la carpeta "proyecto" completa. Pulsa Commit changes.
+4. En datos.js, dentro de "software", escribe:
+     embed: "recursos/pilas-engine/proyecto/index.html",
+     enlace: "recursos/pilas-engine/proyecto/index.html",
+
+No borres este archivo: si la carpeta queda vacía, GitHub la elimina.

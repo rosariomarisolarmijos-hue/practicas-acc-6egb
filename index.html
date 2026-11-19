@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prácticas preprofesionales – UNL</title>
+  <meta name="description" content="Planificaciones microcurriculares y recursos digitales por fase del ciclo de aprendizaje. Carrera de Pedagogía de las Ciencias Experimentales Informática, UNL.">
+  <link rel="icon" href="assets/img/escudo-unl.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap">
+  <script>document.write('<link rel="stylesheet" href="assets/estilos.css?v=' + Date.now() + '">');</script>
+  <noscript><link rel="stylesheet" href="assets/estilos.css"></noscript>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <div class="encabezado" role="banner">
+    <div class="contenedor encabezado__fila">
+      <div class="encabezado__titulos">
+        <p class="encabezado__titulo" id="enc-titulo">Prácticas preprofesionales</p>
+        <p class="encabezado__etiqueta" id="enc-etiqueta">Quinto ciclo</p>
+      </div>
+      <img class="encabezado__logo" src="assets/img/logo-uedl-blanco.png" alt="Universidad Nacional de Loja – Unidad de Educación a Distancia y en Línea" width="1000" height="228">
+    </div>
+  </div>
+  <header class="cabecera" id="cabecera">
+    <div class="contenedor cabecera__fila">
+      <a class="marca" href="#inicio">
+        <img class="marca__logo" src="assets/img/logo-carrera-blanco.png" alt="Universidad Nacional de Loja – Carrera de Pedagogía de las Ciencias Experimentales Informática" width="1000" height="216">
+      </a>
+      <button class="menu-boton" id="menu-boton" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="menu" id="menu" aria-label="Secciones"></nav>
+    </div>
+  </header>
+
+  <section class="carrusel" id="inicio" aria-roledescription="carrusel" aria-label="Portada">
+    <div class="carrusel__pistas" id="carrusel"></div>
+    <button class="carrusel__flecha carrusel__flecha--ant" type="button" id="car-ant" aria-label="Imagen anterior">&#10094;</button>
+    <button class="carrusel__flecha carrusel__flecha--sig" type="button" id="car-sig" aria-label="Imagen siguiente">&#10095;</button>
+    <div class="carrusel__puntos" id="car-puntos"></div>
+  </section>
+
+  <section class="presentacion">
+    <div class="contenedor presentacion__fila">
+      <div class="presentacion__texto">
+        <p class="presentacion__institucion" id="institucion-corta"></p>
+        <p class="presentacion__formato" id="formato"></p>
+      </div>
+    </div>
+  </section>
+
+  <main class="contenedor" id="contenido">
+    <section class="ficha" id="datos-practica" aria-label="Datos de la práctica">
+      <dl id="datos"></dl>
+    </section>
+
+    <section class="bloque" id="ciclo" aria-labelledby="t-ciclo">
+      <h2 class="titulo-seccion" id="t-ciclo"></h2>
+      <p class="subtitulo" id="ciclo-intro"></p>
+      <div id="ciclo-esquema"></div>
+    </section>
+
+    <section class="bloque" id="planificaciones" aria-labelledby="t-planif">
+      <h2 class="titulo-seccion" id="t-planif">Planificaciones microcurriculares</h2>
+      <p class="subtitulo" id="institucion"></p>
+      <div id="flipbook"></div>
+    </section>
+
+    <div id="planes"></div>
+
+    <section class="bloque" id="software-educativo" aria-labelledby="t-soft">
+      <h2 class="titulo-seccion" id="t-soft">Recurso educativo digital</h2>
+      <div id="software"></div>
+    </section>
+  </main>
+
+  <footer class="pie" id="contacto">
+    <div class="pie__fila">
+      <div class="pie__marca pie__marca--izq">
+        <img src="assets/img/logo-carrera-blanco.png" alt="Universidad Nacional de Loja – Carrera de Pedagogía de las Ciencias Experimentales Informática" class="pie__logo" width="1000" height="216">
+      </div>
+      <address class="pie__contacto">
+        <strong>Ciudad Universitaria Guillermo Falconí Espinosa</strong><br>
+        Loja – Ecuador<br>
+        ☎ <strong>07 2593550</strong> (Opción 1 – Presencial)<br>
+        ☎ <strong>07 2593550</strong> (Opción 2 – Distancia)<br>
+        ✉ <strong><a href="mailto:comunicacion@unl.edu.ec">comunicacion@unl.edu.ec</a></strong><br>
+        📍 <a href="https://www.openstreetmap.org/?mlat=-4.03364&amp;mlon=-79.20311#map=17/-4.03364/-79.20311" target="_blank" rel="noopener"><strong>Ver ubicación en el mapa</strong></a>
+      </address>
+      <div class="pie__marca pie__marca--der">
+        <img src="assets/img/logo-uedl-blanco.png" alt="Universidad Nacional de Loja – Unidad de Educación a Distancia y en Línea" class="pie__logo" width="1000" height="228">
+      </div>
+    </div>
+    <p class="pie__derechos">© <span id="anio">2026</span> Universidad Nacional de Loja. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    // Carga siempre la versión más reciente (evita que el navegador muestre datos antiguos)
+    document.write('<script src="datos.js?v=' + Date.now() + '"><\/script>');
+    document.write('<script src="assets/app.js?v=' + Date.now() + '"><\/script>');
+  </script>
+</body>
+</html>
